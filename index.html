@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INDOAKSEL - Pelatihan Nasional</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f1f5f9;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 35px 25px;
+            border-radius: 16px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+            text-align: center;
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #166534;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 21px;
+            color: #1e293b;
+        }
+
+        #status {
+            color: #475569;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .loader {
+            width: 45px;
+            height: 45px;
+            border: 5px solid #e2e8f0;
+            border-top: 5px solid #16a34a;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 25px auto 10px;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="logo">INDOAKSEL</div>
+
+        <div class="subtitle">PELATIHAN NASIONAL</div>
+
+        <h2>Gabung Grup WhatsApp</h2>
+
+        <p id="status">
+            Sedang menghubungkan ke Grup WhatsApp...
+        </p>
+
+        <div class="loader" id="loader"></div>
+
+        <div class="footer">
+            INDOAKSEL &copy; Pelatihan Nasional
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
